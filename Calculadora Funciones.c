@@ -39,7 +39,13 @@ void main()
   float res;
   float a,b;
   int c;
-  //menú 
+  do
+    {
+  printf("Menu\n  1. Suma\n 2. Resta\n 3. Multiplicacion\n 4. Division\n 5. Raiz Cuadrada\n 6. Potencia\n 0. Salir\n");
+  printf("Selecciona la operacion que quieres realizar: ");
+  scanf ("%i",&op);
+    }
+  while (op>0 || op<6)
   switch (op)
     {
       case 1:
@@ -61,8 +67,5 @@ void main()
       res= raiz(a,c);
       break;
     }
- // while menu 
-    {
-    
-    }
+  
 }
